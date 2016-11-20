@@ -1,17 +1,302 @@
+/*
+			font-family: 'Henny Penny', cursive;
+			font-family: 'Share Tech Mono', monospace; 
+			font-family: 'Montserrat Alternates', sans-serif;
+			font-family: 'Lato', sans-serif;
+			font-family: 'Roboto', sans-serif;
+*/
+
+* {
+	box-sizing: border-box;
+}
+/*nasza szerokosc jest mierzona razem z paddingiem*/
 body {
-	background-color: peachpuff;
+	
 	font-family: 'Lato', sans-serif;
+	color: #291f1a;
+	margin: 0px;
+}
+
+span {
+	color: #1ac056;
+	font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+
+}
+section {
+	padding: 0 80px 100px;
+	width: 100%;
+	background-color: #f9fcfe;
+}
+
+section > h2 {
+	font-size: 30px; 
+	font-weight: 300;
+	margin-top: 60px;
+	margin-bottom: 35px;
+}
+
+p {
+	font-weight: 300;
+	line-height: 25px;
+}
+
+/*Main menu styles*/
+#main-nav {
+	width:  100%;
+	position:fixed;
+	background-color: #fff;
+	top: 0;
+	right: 0;
+	color: #1ac056;	
+}
+
+#main-nav >ul {
+	float: right;
+	margin: 0;
+	
+}
+
+#main-nav>ul>li {
+	display: inline-block;
+	padding: 20px 40px;
+	list-style-type: none;
+	font-weight: 300;
+	
+}
+
+#main-nav>ul>li > a {
+	color: #1ac056;
+	text-decoration: none;
+	font-weight: 300;
+}
+
+
+#main-nav>ul>li > a:hover {
 	color: #291f1a;
 }
 
-h1#naglowek{
+
+
+/* Header styles*/
+
+#main-header {
+	background-image: url(../img/header-background.jpg);
+	background-size: cover;
+/*	cover - pokrywa całą wysokość i szerokość kontenera */
+	background-position: center;
+/*	jest wycentrowane żeby przez cover nie uciąć gdzieś */
+	background-repeat: no-repeat;
+	color: #fff;
+}
+
+#main-header .main-header-content {
+	text-align: center;
+	padding: 30vh;
+/*	rozpycham jednostkami relatywnymi żeby mi się ten obrazek skalował */
+}
+
+#main-header .main-header-content h1 {
+	font-size: 4em;
 	font-family: 'Roboto', sans-serif;
+	font-weight: 200;
+
 }
 
-section#sekcja1 {
-	background-color: f9fcfe;
+#main-header .main-header-content h2 {
+	font-size: 2em;
+	font-weight: 100;
+
 }
 
-footer#stopka {
+/* Header styles stooooooooooooooooop */
+
+
+/*section about *********************************************************************/
+
+#about {
+	background-color: #f9fcfe;
+	overflow: hidden;
+/*	hidden - sekcja ma rozmiar calosci rozciaga sie*/
+}
+#about > figure  {
+	width: 50%;
+	margin: 0;
+	float: left;
+	text-align: center;
+/*	obrazek jako wlasciwosc liniowa dodajemy text-align:centre, jezeli byloby obrazek obeazek, to*/
+}
+#about > article {
+	width: 50%;
+	float: left;
+}
+
+#about > article >p {
+	font-weight: 300;
+	line-height: 25px;
+/*	szerokosc czcionki i wysokość jednej linii jakby interlinia*/
+}
+
+#about > figure > img {
+/*	box-sizing: content-box;*/
+	max-height: 350px;	
+	max-width: 100%;
+    border: 14px solid #fff;
+	border-radius: 15%;	
+}
+
+/*section about  stop*/
+
+/*section skills start */
+
+#skills > p {
+	text-align: center;
+}
+
+#skills div#skills-icons{
+	text-align: center;
+}
+
+#skills #skills-icons figure {
+	display: inline-block;
+	margin: 40px;
+
+}
+
+#skills #skills-icons figure img {
+	margin-bottom: 15px;
+}
+
+
+#contact {
+	color:#fff;
 	background-color: #213b50;
+	overflow: hidden;
+	text-decoration: none;
 }
+#contact #info {
+	width: 50%;
+	margin: 0;
+	float: left;
+	text-align: center;
+	text-decoration: none;
+	font-weight: 300;
+	line-height: 25px;
+}
+
+#contact #contact-info h9 {
+	font-weight: 400;
+	line-height: 125px;
+	font-size: 40px;
+}
+
+
+#contact #contact-info a {
+	color: #1ac056;
+	text-decoration: none; 
+}
+
+#contact .message {
+	top: 0;
+	float: right;
+	display: inline-block;
+	width: 50%;
+}
+
+#contact .message #name{
+	background-color:  #4e708c;
+	color: #fff;
+}
+
+#contact .message #email{
+	background-color:  #4e708c;
+	color: #fff;
+}
+#contact .message #wiadomosc{
+	background-color:  #4e708c;
+	color: #fff;
+}
+
+#contact .message #submit {
+	float: left;
+	background-color: #1b5;
+	color: white;
+	font-weight:800;
+	border: 0px;
+	padding: 15px;	
+}
+
+footer#make {
+	background-color: #113399;
+	color: #fff;
+	margin:0;
+	margin-bottom: 0;
+	
+}
+
+/*
+#skills {
+	text-align: center;
+	margin: 0;
+	width:  100%;
+	top: 0;
+	right: 0;
+}
+
+#skills div figure {
+	display: inline-block;
+	padding: 20px 40px;
+	margin: 0px;
+	margin-bottom: 10px;
+}
+#skills #skills-icons figure {
+	margin-bottom: 15px;
+}
+
+figure figcaption{
+	top: 10px;
+	text-align: center;
+}
+*/
+/*section skills stop */
+/*
+
+@media (min-width:480px) and (max-width:639px)  {
+	body {
+		font-size: 24px;
+	}
+}
+
+@media  (max-width:479px)  {
+	body {
+		font-size: 228px;
+	}
+*/
+
+/*
+#about .about-content {
+	float: right;
+}
+*/
+
+/*
+#main-header > .main-header-content {
+
+	font-family: 'Roboto', sans-serif;
+	background-image: url(../img/header-background.jpg);
+	background-position: cover;
+	background-position: center;
+	text-align: center;
+	color: #fff;
+	padding: 30vh;
+	
+}
+
+#main-header > .main-header-content > h1{
+	font-family: 'Roboto', sans-serif;
+	
+}
+*/

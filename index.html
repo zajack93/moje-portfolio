@@ -15,25 +15,121 @@
 			font-family: 'Lato', sans-serif;
 			font-family: 'Roboto', sans-serif;-->
 				
+<!-- Font Awesome Styles -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 <!--	Main styles		-->
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<!--naglowek start-->
 
-<h1 id="naglowek"> 
-	Katarzyna Zając
-</h1>
+<!--menu nawigacyjne start-->
 
-<!--naglowek stop-->
+<nav id="main-nav">
+	<ul>
+	
+		<li class="menu-item"><a href="#main-header"> Home </a></li>
+<!--		wrzucam kotwice czyli hashtag i nazwa id-->
+		<li class="menu-item"><a href="#about"> O mnie </a></li>
+		<li class="menu-item"><a href="#skills"> Umiejętności </a></li>
+		<li class="menu-item"><a href="http://cda.pl"> Portfolio </a></li>
+		<li class="menu-item"><a href="http://cda.pl"> Kontakt </a></li>
+
+	</ul>
+	
+</nav>
 
 
-<section id="sekcja1">
-	<p>Testowy paragraf sekcji</p>
+<!--menu nawigacyjne stop-->
+<!--main-header start-->
+
+<header id="main-header"> 
+	<div class="main-header-content">
+		<h1> Katarzyna <span> Zając </span> </h1>
+		<h2> Front-End Developer</h2>
+	</div>		
+</header>
+
+
+<!--main-header stop-->
+
+<!--section about section start-->
+
+<section id="about">
+	<h2> O <span> mnie </span></h2>
+	<figure class="about-image"><img src="img/jan-nowak.jpg" alt="jan nowak"></figure>
+		
+	
+	<article class="about-content">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at dui eget justo congue placerat ultrices eget nibh. Vestibulum convallis consectetur eros, et interdum purus rhoncus eu. Donec felis odio, varius porta rutrum ac, sagittis vel metus. Curabitur auctor massa quis libero ultrices pretium. Pellentesque pharetra nulla ligula, sit amet pulvinar dolor lobortis quis. Phasellus eleifend mauris ut enim sagittis, eu imperdiet nisl suscipit. Fusce nec bibendum orci. Aenean ultrices velit hendrerit nunc tempus ornare. Nullam eget eleifend nisl. Proin facilisis a ex aliquet fermentum. Suspendisse eu lectus convallis, pretium turpis sit amet, lobortis quam. Vivamus at lacinia mauris.
+		</p>
+	</article>
 </section>
 
-<footer id="stopka">
-<!--	<p>Testowy paragraf stopki</p>-->
+<!--section about me stop-->
+
+<!--section skills start-->
+<section id="skills">
+	<h2> Moje <span> umiejętności </span></h2>
+	<article class="skills-content">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime at fugit, iste excepturi obcaecati placeat dicta, consectetur ipsa vero. Pariatur odit libero sapiente sequi, id dolorum nostrum distinctio laboriosam neque! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, nisi laboriosam fugiat consequatur expedita quasi corporis, modi, quas commodi iusto quia illo dicta placeat doloribus veritatis perferendis ex ipsa laborum. 
+		</p>
+	</article>
+	<div id="skills-icons">
+		<figure> 
+			<img src="icons/css3.png" alt="css3">
+			<figcaption> CSS3 </figcaption>
+		</figure>
+		<figure>
+			<img src="icons/html5.png" alt="html5">
+			<figcaption> HTML 5</figcaption>
+		</figure>
+		<figure>
+			<img src="icons/jquery.png" alt="jquery">
+			<figcaption>JQuery</figcaption>
+		</figure>
+		<figure>
+			<img src="icons/js.png" alt="javascript">
+			<figcaption> JavaScript </figcaption>
+		</figure>
+	</div>
+	
+</section>
+
+<!--section skills stop-->
+
+
+<section id="contact">
+<div id="contact-info">
+<h9> Katarzyna <span> Zając </span></h9> <br />
+<address id="adres">
+	ul. Fredry 11 <br /> <br />
+	32-545 Dulowa <br /> <br /> < br />
+	
+	tel: 999999999  <br /> <br />
+	e-mail <a href="mailto:zajack93@gmail.com">wyślij maila</a> <br />
+</address>
+</div>
+
+<div class="message">
+	<label for="name"> Imię i Nazwisko: </label> <br />
+	<textarea name="name" id="name" rows="2" cols="70">Imię i nazwisko
+	</textarea> <br /> <br />
+	
+	<label for="email"> email </label> <br />
+	<textarea name="email" id="email" rows="2" cols="70">e-mail
+	</textarea> <br /> <br />
+	
+	<label for="wiadomosc"> Wiadomość </label>	<br />
+	<textarea name="wiadomosc" id="wiadomosc" rows="6" cols="70">Treść wiadomości
+	</textarea> <br /><br />
+		
+	<input type="submit" id="submit"  value="Wyślij">
+			
+</div>
+</section>
+	
+<footer id="make">
+	<p>Testowy paragraf stopki</p>
 </footer>
 	
 </body>
