@@ -1,0 +1,17 @@
+body {
+	background-color: peachpuff;
+	font-family: 'Lato', sans-serif;
+	color: #291f1a;
+}
+
+h1#naglowek{
+	font-family: 'Roboto', sans-serif;
+}
+
+section#sekcja1 {
+	background-color: f9fcfe;
+}
+
+footer#stopka {
+	background-color: #213b50;
+}
