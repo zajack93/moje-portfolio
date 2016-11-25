@@ -146,6 +146,7 @@ p {
 	max-width: 100%;
     border: 14px solid #fff;
 	border-radius: 15%;	
+	background-image
 }
 
 /*section about  stop*/
@@ -174,10 +175,14 @@ p {
 #contact {
 	color:#fff;
 	background-color: #213b50;
-	overflow: hidden;
+/*	overflow: hidden;*/
 	text-decoration: none;
+	position: relative;
+	line-height: 25px;
+
 }
 #contact #info {
+	position: absolute;
 	width: 50%;
 	margin: 0;
 	float: left;
@@ -191,19 +196,34 @@ p {
 	font-weight: 400;
 	line-height: 125px;
 	font-size: 40px;
+	text-decoration: none;
 }
 
-
+#contact #contact-info address {
+	font-style: normal; 
+}
 #contact #contact-info a {
 	color: #1ac056;
 	text-decoration: none; 
+	top: 0px;
+	bottom:0px;
+}
+
+#contact #contact-info .list-group a {
+	color: skyblue;
+	text-decoration: none; 
+	top: 0px;
+	bottom:0px;
 }
 
 #contact .message {
-	top: 0;
+	position: absolute;
+	top: 10px;
+	right: 0px;
 	float: right;
-	display: inline-block;
+	display: inline;
 	width: 50%;
+	line-height: 25px;
 }
 
 #contact .message #name{
@@ -230,10 +250,10 @@ p {
 }
 
 footer#make {
+	display:block;
 	background-color: #113399;
 	color: #fff;
-	margin:0;
-	margin-bottom: 0;
+	
 	
 }
 
