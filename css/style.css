@@ -146,7 +146,7 @@ p {
 	max-width: 100%;
     border: 14px solid #fff;
 	border-radius: 15%;	
-	background-image
+/*	background-image*/
 }
 
 /*section about  stop*/
@@ -177,71 +177,99 @@ p {
 	background-color: #213b50;
 /*	overflow: hidden;*/
 	text-decoration: none;
-	position: relative;
+/*	position: relative;*/
 	line-height: 25px;
+	width: 100%;
+/*	height: 100%;*/
 
 }
-#contact #info {
-	position: absolute;
+#contact .contact-info {
 	width: 50%;
 	margin: 0;
 	float: left;
-	text-align: center;
+	text-align: left;
 	text-decoration: none;
 	font-weight: 300;
 	line-height: 25px;
+	overflow: hidden;
 }
 
-#contact #contact-info h9 {
+#contact .contact-info h9 {
 	font-weight: 400;
 	line-height: 125px;
 	font-size: 40px;
 	text-decoration: none;
 }
 
-#contact #contact-info address {
+#contact .contact-info address {
 	font-style: normal; 
 }
-#contact #contact-info a {
+#contact .contact-info a {
 	color: #1ac056;
 	text-decoration: none; 
 	top: 0px;
 	bottom:0px;
+	font-size: 20px;
 }
 
-#contact #contact-info .list-group a {
-	color: skyblue;
+#contact .contact-info .list-group a {
+	color: white;
 	text-decoration: none; 
 	top: 0px;
-	bottom:0px;
+	bottom:20px;
+	display: inline-block;
+	margin-right: 15px;
+	border: 15px;
 }
 
+#contact .contact-info .list-group a:hover {
+	color: #213b50;
+	background-color: white;
+	border-color: yellow;
+}
 #contact .message {
-	position: absolute;
-	top: 10px;
-	right: 0px;
-	float: right;
-	display: inline;
+/*	position: absolute;*/
+	top: 20px;
+/*	right: 1%;*/
 	width: 50%;
-	line-height: 25px;
+	line-height: 30px;
+	margin-top: 25px;
+	overflow: hidden;
+	font-family: 'Lato', sans-serif;
 }
 
-#contact .message #name{
+#contact .message  #name{
+	text-align:left;
 	background-color:  #4e708c;
 	color: #fff;
+	border: 40px;
+	width: 80%;
+	height: 30px;
 }
 
 #contact .message #email{
+	text-align: left;
 	background-color:  #4e708c;
 	color: #fff;
+	border: 40px;
+	width: 80%;
+	height: 30px;
 }
+
 #contact .message #wiadomosc{
 	background-color:  #4e708c;
 	color: #fff;
+	width: 80%;
+	height: 70px;
+	border: 40px;
+	overflow: auto;
+	font-family: 'Lato', sans-serif;
+	
 }
 
 #contact .message #submit {
-	float: left;
+	position: absolute; 
+	right: 15%;
 	background-color: #1b5;
 	color: white;
 	font-weight:800;
@@ -249,13 +277,18 @@ p {
 	padding: 15px;	
 }
 
-footer#make {
-	display:block;
-	background-color: #113399;
+
+footer#make p {
+	margin-top=0px;
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #162736;
 	color: #fff;
-	
-	
-}
+	padding: 5px;
+	font-style: italic;
+	font-size: 15px;
+
 
 /*
 #skills {
