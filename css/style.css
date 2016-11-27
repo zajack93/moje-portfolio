@@ -173,7 +173,7 @@ p {
 	margin-bottom: 15px;
 }
 
-
+/*	************************ Section about contact start *****************************/
 #contact {
 	color:#fff;
 	background-color: #213b50;
@@ -215,18 +215,22 @@ p {
 }
 
 #contact .contact-info .list-group a {
+	height: 38px;
+    width: 38px;
+	margin-right: 30px;
 	color: white;
 	text-decoration: none; 
-	top: 0px;
-	bottom:20px;
 	display: inline-block;
-	margin-right: 15px;
-	border: 15px;
+	border: 1px solid #fff;
+	color: #fff;
+	text-align: center;
+	font-size: 22px;
 }
 
 #contact .contact-info .list-group a:hover {
 	color: #213b50;
-	background-color: white;
+    background-color: #fff;
+    border: 1px solid #213b50;
 	
 }
 #contact .message {
@@ -269,17 +273,25 @@ p {
 	
 }
 
+
+
 #contact .message #submit {
 	position: absolute; 
 	right: 15%;
-	background-color: #1b5;
-	color: white;
-	font-weight:800;
-	border: 0px;
-	padding: 15px;	
+	background-color: #426684;
+    width: auto;
+    padding: 15px 30px;
+    float: right;
+    text-transform: uppercase;
+    border: 1px solid #1ac056;
+    background-color: #1ac056;
+    color: #fff;
+    font-weight: 600; 
 }
 
+/*	************************ Section about contact stop *****************************/
 
+/*	************************ Section footer start *****************************/
 footer#make p {
 	margin-top=0px;
 	left: 30%;
@@ -292,6 +304,10 @@ footer#make p {
 	font-style: italic;
 	font-size: 15px;
 }
+
+/*	************************ Section about footer stop *****************************/
+
+/*	************************ Section about portfolio start *****************************/
 
 #portfolio #portfolio-images {
 	width: 100%;
@@ -361,8 +377,11 @@ footer#make p {
     text-align: center;
     color: #fff;
     top: 50%;
-	
+/*	position: absolute;*/
 /*    transform: translateY(-50%);*/
+	padding: 5px;
+	left: 0;
+	right: 0;
 }
 #portfolio #portfolio-images .single-portfolio-image .single-portfolio-image-mask .single-portfolio-item-mask-border .portfolio-item-content h2 {
 	margin: 0px;
@@ -371,6 +390,8 @@ footer#make p {
 #portfolio #portfolio-images .single-portfolio-image .single-portfolio-image-mask .single-portfolio-item-mask-border .portfolio-item-content a {
 	color: #fff;
 }
+
+/*	************************ Section about portfolio stop *****************************/
 /*
 #portfolio #portfolio-images #single-img-1 {
 	background-image: url("../img/portfolio1.jpg");
