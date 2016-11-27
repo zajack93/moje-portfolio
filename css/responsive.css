@@ -1,0 +1,56 @@
+/*<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Responsive start !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->*/
+
+@media all and (max-width: 1200px) {
+	
+	
+}
+
+@media all and (max-width: 768px) {
+	#main-nav .toggle {
+		display:block;
+		color: 1ac056;
+		padding: 0 20px;
+		font-size: 20px;
+		line-height: 60px;
+		text-decoration: none;
+		border: none;
+		text-align: right;
+	} 
+	
+	
+/*
+	#main-nav ul {
+		display: none;
+	}
+*/
+	
+	#main-nav #drop:checked + ul {
+		display: block;
+		
+	}
+	
+	#main-nav ul {
+        display: none;
+        width: 100%;
+        text-align: right;
+        padding: 0;
+    }
+    
+    #main-nav ul li {
+        display: block;
+        width: 100%;
+        border-top: 1px solid gray;
+    }
+}
+
+@media all and (max-width: 680px) {
+	
+	
+}
+
+@media all and (max-width: 480px) {
+	
+	
+}
+
+/*<!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Responsive stop !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->*/
